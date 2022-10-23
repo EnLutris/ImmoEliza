@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Files which are not used in the model
+/model/coef.csv
+/model/model.ipynb
+/predict/json_files_creation.ipynb
