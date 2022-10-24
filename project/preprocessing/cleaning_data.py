@@ -3,14 +3,14 @@ import pandas as pd
 import numpy as np
 
 # Opening JSON files
-with open('preprocessing/correlations.json') as json_file2:
-    correlations = json.load(json_file2)
+with open('preprocessing/correlations.json') as json_file1:
+    correlations = json.load(json_file1)
 
-with open('preprocessing/medians.json') as json_file3:
-    medians = json.load(json_file3)
+with open('preprocessing/medians.json') as json_file2:
+    medians = json.load(json_file2)
 
-with open('preprocessing/pc_coefs.json') as json_file4:
-    pc_coefs = json.load(json_file4)
+with open('preprocessing/pc_coefs.json') as json_file3:
+    pc_coefs = json.load(json_file3)
 
 
 
