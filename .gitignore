@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 #Files which are not used in the model
-project/model/coef.csv
-project/model/model.ipynb
-project/predict/json_files_creation.ipynb
+model/coef.csv
+model/model.ipynb
+predict/json_files_creation.ipynb
