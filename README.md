@@ -1,18 +1,17 @@
-# ImmoEliza
-## Description
-- This is the fourth part of the immo_eliza project which aims gaining knowledge about deploying machine learning model, creating API, and deploying an API to Render with Docker.
+#### Description
+This is the fourth part of the immo_eliza project, which aims to learn about deploying machine learning models, creating API, and deploying an API to Render with Docker.
 
-- The API which I deployed is accessible on: https://buyaproperty.onrender.com.
+- The API which I deployed is accessible at: https://buyaproperty.onrender.com.
 
-## Usage
+#### Usage
 - It can be used to predict the real estate price in Belgium.
 
-## Contributers
+#### Contributors
 - BeCode BXL-Bouman-5 team and the coaches
 
-## Timeline
+#### Timeline
 Given time for the project: 5 days
 
-- Creating API was the challenging part which took 3 days to understand and create one.
-- Building a dockerfile and docker image and deploying it in Render took 1 day.
-- Reviewing and improving took 1 day.
+- Creating API was challenging, taking three days to understand and create.
+- Building a DockerFile and Docker image and deploying it in Render took one day.
+- Reviewing and improving took one day.
