@@ -32,7 +32,25 @@ async def status_check():
 
 @app.get("/predict")
 async def data_format():
-  return ("Required fields are: area: int, property_type: str('APARTMENT', 'HOUSE', 'OTHERS'), rooms_number: int, zip_code: int. Optional filelds are: land_area: int, garden: bool, garden_area: int, equipped_kitchen: bool, swimming_pool: bool, open_fire: bool, terrace: bool, terrace_area: int, facades_number: int, building_state: str('NEW', 'GOOD', 'TO RENOVATE', 'JUST RENOVATED', 'TO REBUILD')")
+  return ('''
+    Required fields are: 
+    area: int, 
+    property_type: str('APARTMENT', 'HOUSE', 'OTHERS'), 
+    rooms_number: int, 
+    zip_code: int. 
+    
+    Optional filelds are: 
+    land_area: int, 
+    garden: bool, 
+    garden_area: int, 
+    equipped_kitchen: bool, 
+    swimming_pool: bool, 
+    open_fire: bool, 
+    terrace: bool, 
+    terrace_area: int, 
+    facades_number: int, 
+    building_state: str('NEW', 'GOOD', 'TO RENOVATE', 'JUST RENOVATED', 'TO REBUILD')
+    ''')
 
 @app.post("/predict")
 async def make_prediction(data: Item = Body(embed=True)):
@@ -40,6 +58,3 @@ async def make_prediction(data: Item = Body(embed=True)):
   processed_input = preprocess(json_input)
   predicted_value = prediction(processed_input)
   return predicted_value
-
-
-
